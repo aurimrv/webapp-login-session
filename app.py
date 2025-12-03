@@ -1,7 +1,7 @@
+import os
 from flask import Flask, render_template, request, redirect, url_for, session, make_response
 from datetime import datetime, timedelta
 import secrets
-import os
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(32)
