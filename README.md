@@ -21,4 +21,3 @@
 - **Security**: HttpOnly cookies prevent XSS attacks
 - **Protection**: SameSite attribute prevents CSRF attacks
 - **Auto-expiry**: Sessions expire based on configuration
-# webapp-login-session
