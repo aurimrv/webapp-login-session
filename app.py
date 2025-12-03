@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session, make_response
 from datetime import datetime, timedelta
 import secrets
+import os
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(32)
@@ -149,5 +150,5 @@ def session_info():
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
-    app.run(debug=False, host='0.0.0.0', port=port)
-    #app.run(debug=True, host='127.0.0.1', port=5000)
+    #app.run(debug=False, host='0.0.0.0', port=port)
+    app.run(debug=True, host='127.0.0.1', port=5000)
